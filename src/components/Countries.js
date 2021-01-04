@@ -1,7 +1,7 @@
 import React from "react";
 import { connect } from "react-redux";
 import { selectCountry } from "../actions";
-
+import SearchBar from "./SearchBar";
 class Countries extends React.Component {
   renderContainer(country) {
     return (
@@ -57,6 +57,7 @@ class Countries extends React.Component {
           textAlign: "center",
         }}
       >
+        <SearchBar />
         <div
           style={{ width: "50%", textAlign: "left", marginTop: "100px" }}
           className=" ui  divided items"

@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 //components
 import Regions from "./Regions";
 import SelectedRegion from "./SelectedRegion";
-import SearchBar from "./SearchBar";
+
 import Countries from "./Countries";
 import SideBar from "./SideBar";
 
@@ -13,7 +13,6 @@ class App extends React.Component {
       <div>
         <Regions />
         <SelectedRegion />
-        <SearchBar />
         <Countries />
         {this.props.numberOfCountries > 0 ? <SideBar /> : null}
       </div>
